@@ -23,7 +23,7 @@ header h1 {
 }
 
 nav {
-    font: bold;
+    font-weight: bold;
     background-color: #F3F3F3;
     padding: 0.5rem 0.5rem 0.5rem 2rem;
 }
