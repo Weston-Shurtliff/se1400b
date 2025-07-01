@@ -4,7 +4,7 @@ main {
 }
 
 body {
-    background-color: linear-gradient(to bottom, #eeeeee, #ffffff);
+    background: linear-gradient(to bottom, #eeeeee, #ffffff);
     background-attachment: fixed;
     color: #666666;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
