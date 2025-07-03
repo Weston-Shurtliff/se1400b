@@ -1,22 +1,30 @@
 body {
-    background-color: #ffcbd2;
+    background: linear-gradient(to bottom, #ff8c00, #ff1493);
     background-repeat: no-repeat;
     margin: 0px;
 }
 
 header {    
-    background-color: #ff8fa0;
+    background-color: #FF6F61;
+    font-size: larger;
     grid-column: 2/-2;
     text-align: center;
+    background-image: url(images/pklogo.png);
+    background-position: right;
+    background-size: 100px;
+    background-repeat: no-repeat;
 }
 
+
+
 nav {
-    background: linear-gradient(to bottom, #ff8fa0, #ffa7b4);
+    background: linear-gradient(to bottom, #5170FF, #314399);
     grid-column: 2/3;
     grid-row: 2/3;
     position: sticky;
     top: 0;
     color: #ffffff;
+    width: 80%;
 }
 
 nav ul {
@@ -26,7 +34,7 @@ nav ul {
 
 nav ul li {
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
     padding: 10px;
 
 }
@@ -40,15 +48,24 @@ main {
     grid-row: 2/4;
 }
 
+h2 {
+    text-align: center;
+}
+
 p {
     font-size: 20px;
 }
 
 footer {
-    background-color: #ffa7b4;
-    grid-column: 2/-2;
+    height: auto;
+    font-size: 20px;
+    line-height: 0px;
+    text-align: center;
+    background-color: #A60082;
+    grid-column: 1/-1;
     grid-row: 4/5;
 }
+
 
 #backgroundimg {
     z-index: -1;
@@ -61,6 +78,13 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#white {
+    z-index: -2;
+    background-color: #ffffff;
+    grid-column: 2/-2;
+    grid-row: 2/5;
 }
 
 #wrapper {
