@@ -200,7 +200,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     header h1 {
         background-image: none;
         text-align: center;
