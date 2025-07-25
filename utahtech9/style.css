@@ -232,6 +232,15 @@
         grid-row: 5/6;
     }
 
+    #shoppingcart img{
+        width: 100%;
+        height: auto;
+    }
+    #shoppingcart {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     #wrapper {
         display: grid;
         grid-auto-rows: minmax(0px, auto);
@@ -273,6 +282,11 @@
             height: auto;   
             padding-left: 0px;
         }
+
+        #shoppingcart {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
     }
 
     @media only screen and (max-width: 600px) {
@@ -288,5 +302,8 @@
 
         #homehero, #studenthero, #facultyhero, #alumnihero, #shophero {
             display: none;
+        }
+        #shoppingcart {
+            grid-template-columns: 1fr;
         }
     }
