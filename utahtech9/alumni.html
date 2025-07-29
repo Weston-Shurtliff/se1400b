@@ -28,19 +28,19 @@
     <h2>Join Alumni Mailing List</h2>
     <h3>Request Alumni Newsletter</h3>
     <p>Required information is marked with an asterisk (*).</p>
-    <form method="post" onsubmit="return validateForm();" action="https://kearl.net/se1400/mail.php" id="form" >
-      <label for="myFName">First Name:</label>
-      <input type="text" id="myFName" name="myFName">
-      <label for="myLName">Last Name:</label>
-      <input type="text" id="myLName" name="myLName">
+    <form action="https://kearl.net/se1400/mail.php" method="post" id="form" >
+      <label for="myFName">*First Name:</label>
+      <input type="text" id="myFName" name="myFName" required>
+      <label for="myLName">*Last Name:</label>
+      <input type="text" id="myLName" name="myLName" required>
       <label for="myEmail">*E-mail:</label>
-      <input type="email" id="myEmail" name="myEmail">
+      <input type="email" id="myEmail" name="myEmail" required>
       <label for="myPhone">Phone:</label>
       <input type="tel" id="myPhone" name="myPhone" >
       <label for="date">Graduation Date:</label>  
       <input type="date" id="date" name="date">
-      <label for="comments">Comments:</label>
-      <textarea name="comments" id="comments" rows="2" cols="20"></textarea>
+      <label for="comments">*Comments:</label>
+      <textarea name="comments" id="comments" rows="2" cols="20" required></textarea>
       
       <input type="submit" id="mySubmit">
     </form>
@@ -51,14 +51,5 @@
       <a href="mailto:weston.shurtliff@utahtech.edu">weston.shurtliff@utahtech.edu</a>
   </footer>
   </div>
-  <script> 
-  function validateForm() {
-       if (document.forms[0].myEmail.value == "" ) {
-            alert("Please enter an e-mail address.");
-            return false;
-       } // end if
-       return true;
-  } // end function validateForm
-</script>
 </body>
 </html>
