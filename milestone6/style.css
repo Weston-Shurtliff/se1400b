@@ -51,6 +51,7 @@ nav ul li a {
 main {
     grid-column: 3/-2;
     grid-row: 2/4;
+    min-height: 100vh;
 }
 
 h2 {
@@ -73,47 +74,54 @@ footer {
     grid-row: 4/5;
 }
 
-    form {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 200px 1fr;
-        grid-gap: 0.75rem;
-        width: 90%;
-        margin: 10px;
-    }
-    input, textarea {
-        font-size: 1rem;
-        padding: 10px;
-        color: #666666;
-        background-color: #fafafa;
-    }
-
-    textarea {
-        height: 4rem;
-        border-width: 2px;
-    }
-
-    input:focus, textarea:focus {
-        outline: none;
-        background-color: #f0f0f0;
-    }
-
-    label {
-        font-weight: bold;
-        padding: 10px;
-        text-align: right;
-    }
-
-    #submit {
-        width: 10rem;
-        grid-column: 2/3;
-        border-radius: 5px;
-    }
-
-#shoppingcart {
+form {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 0.75rem;
+    width: 90%;
+    margin: 10px;
+}
+input, textarea {
+    font-size: 1rem;
     padding: 10px;
+    color: #666666;
+    background-color: #fafafa;
 }
 
+textarea {
+    height: 4rem;
+    border-width: 2px;
+}
+
+input:focus, textarea:focus {
+    background-color: #f0f0f0;
+}
+
+label {
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+}
+
+#submit {
+    width: 10rem;
+    grid-column: 2/3;
+    border-radius: 5px;
+}
+
+#shoppingcart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    
+}
+
+.shopitem {
+    height: 200px;
+    
+}
+ 
 
 #homeback {
     z-index: -1;
@@ -180,6 +188,11 @@ footer {
     grid-template-rows: auto;
 }
 
+footer h6 {
+    padding: 0px;
+    margin: 15px;
+}
+
 @media only screen and (max-width: 992px)  {
 
     #wrapper {
@@ -230,6 +243,10 @@ footer {
         padding: 6px 10px 0px 10px;
         grid-row: 1/2;
     }
+
+    #shoppingcart {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media only screen and (max-width: 768px)  {
@@ -249,7 +266,12 @@ footer {
     main {
         padding-left: 12px;
     }
+
     nav ul li img {
         height: 62px;
+    }
+
+    #shoppingcart {
+        grid-template-columns: 1fr;
     }
 }
