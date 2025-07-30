@@ -114,11 +114,12 @@ label {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;
+    place-items: center;
 }
 
 .shopitem {
-    width: 80%;
-    margin: 10px;
+    width: 100%;
+    height: auto;
 }
 
 .shopcell{
@@ -277,6 +278,7 @@ footer h6 {
     
     main {
         padding-left: 12px;
+        grid-column: 1/-1;
     }
 
     nav ul li img {
