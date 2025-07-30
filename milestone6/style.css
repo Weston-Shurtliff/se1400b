@@ -72,9 +72,22 @@ footer {
 }
 
 
-#backgroundimg {
+#homeback {
     z-index: -1;
     background-image: url(images/1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    opacity: 70%;
+    grid-column: 2/-2;
+    grid-row: 1/5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#aboutback {
+    z-index: -1;
+    background-image: url(images/2.png);
     background-repeat: no-repeat;
     width: 100%;
     opacity: 70%;
